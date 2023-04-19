@@ -94,6 +94,8 @@ const { createApp } = Vue
             )
         },
 
-
+        stopScroll(){
+            clearInterval(this.autoScroll)
+        }
     }
   }).mount('#app')

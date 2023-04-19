@@ -12,9 +12,8 @@
 <body>
 
     <div id="app">
-
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
+            <div class="slider-wrapper" tabindex="0" @mouseover="stopScroll()" @mouseleave="autoPlay()">
 
                 <div class="item">
                     <img v-bind:src="slides[currentIndex].image" alt="Spiderman" />
@@ -32,7 +31,6 @@
                         <img v-bind:src="element.image" v-bind:alt="element.title">
                     </div>
                 </div>
-
             </div>
         </div>
 
