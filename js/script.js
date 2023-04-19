@@ -75,7 +75,10 @@ const { createApp } = Vue
             } else{
                 this.currentIndex++
             }
+        },
 
+        changeImg(i){
+            this.currentIndex = i
         }
 
     }
